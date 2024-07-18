@@ -41,3 +41,32 @@ const result = returnsum(2,3);
 
 // console.log(LoginUserMsg())
 
+//rest operator
+
+function calculateCartPrice(...num1)
+{
+    return num1
+}
+
+// console.log(calculateCartPrice(200,300,100,400));
+
+const user = {
+    username: "Abhishek",
+    price: 199
+}
+
+function handleObject(anyobject)
+{
+    console.log(`Name Of User is ${anyobject.username}`);
+}
+
+// handleObject(user);
+
+const myArray = [2,3,4,5,6];
+
+function returnSecondValue(getArray)
+{
+    return getArray[1];
+}
+
+console.log(returnSecondValue(myArray));
