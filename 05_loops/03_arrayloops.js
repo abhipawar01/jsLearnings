@@ -31,7 +31,22 @@ const values = coding.forEach( (item) => {
 
 // console.log(values);
 
+
+//filter---------
+
 const myNums =[1,2,3,4,5,6,7]
 
 const newValues = myNums.filter( (num) => num < 4) //not using return  beacuse its happening in implicitly on same line without the curly braces.
-console.log(newValues)
+// console.log(newValues)
+
+// const newNums = []
+
+// myNums.forEach( (num) => {
+//     if(num > 4)
+//     {
+//         newNums.push(num)
+//     }
+// }) 
+// console.log(newNums);
+
+
