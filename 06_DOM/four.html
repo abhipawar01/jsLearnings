@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="language">
+        <li>
+            Javascript
+        </li>
+    </ul>
+</body>
+<script>
+    //basic way
+    function addLangName(langname)
+    {
+        const ele = document.createElement('li')
+        ele.innerHTML=`${langname}`
+        document.querySelector('.language').appendChild(ele)
+    }
+    addLangName("python")
+    addLangName("typescript")
+    // here problem is every single time we are traversing the whole tree to add the element at the end. so it can create a optimizing 
+    //problem so we use some dsa concept to optimize it 
+    function addoptilang(langname)
+    {
+        console.log("inside");
+        const ele = document.createElement('li');
+        ele.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(ele)
+    }
+    addoptilang('golang')
+
+    //Edit
+
+    const seclang = document.querySelector("li:nth-child(2)")
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    seclang.replaceWith(newli)
+
+    //remov
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+</html>
