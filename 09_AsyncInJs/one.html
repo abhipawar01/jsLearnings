@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jonathan iS the Best Player</h1>
+    <button id="stop">Stop </button>
+</body>
+<script>
+    const Abhishek = function(){
+        console.log("Abhishek");
+    }
+    const ChangeText = function()
+    {
+        document.querySelector('h1').innerHTML="ClutchGod Is The Best Igl"
+    }
+    const ChangeMe = setTimeout(ChangeText,3000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(ChangeMe)
+        console.log("Stopped")
+    })
+
+
+</script>
+</html>
